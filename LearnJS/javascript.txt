@@ -1,0 +1,45 @@
+[JAVASCRIPT FUNDAMENTAL] 
+
+- JavaScript sangat powerful dapat digunakan di berbagai platform
+- Statement : memberi info pada browser terhadap suatu aksi (menampilkan isi file pada browser) --> console.log()
+- Semicolon : (;) digunakan untuk menutup sebuah statement (kalo mau ada banyak statement dalam satu baris harus pake semicolon)
+    semicolon menandakan akhir dari statement
+- Satu baris bisa lanjutin statement di baris sebelumnya selama masih dalam satu statement.
+- Comment dalam JavaScript menggunakan : // , untuk multiline comment pake : /* */
+- Variables : konsep utama dari bahasa pemrograman --> menampung seperti baskom yang bisa diisi apapun
+    Penulisan variabel pake let (nama variabel);
+- Bahasa pemrograman akan dijalankan baris per baris
+- Konsep refilling variable -> kalo kita isi ulang var, yang lama akan ke replace dengan var yang baru
+- Refilling another variables -> ngisi ulang variable dengan variable lain
+- Declaring multiple variables -> cara dalam ngebuat banyak variable : let nama ="", umur="", tempatTinggal="".
+
+Rules dalam membuat variabel : 
+1. Penulisan bisa diawali dengan berbentuk huruf, simbol ($, _)
+2. Penulisan diawali dengan angka tidak bisa
+3. Penulisan dengan CamelCase (penulisan jika ada 2 huruf atau lebih, maka huruf awal kecil, huruf selanjutnya besar)
+    Contoh : namaBapak
+4. Constant Variable : sebuah variable diawali dengan kata const -> nilai yang tetap dan tidak dapat berubah
+5. Upper Constant : variabel constant yang tetap yang ditulis dengan huruf besar 
+    Contoh -> const MAIN_COLOR = #FFFFFF
+
+Tipe Data dalam JS :
+1. String = untuk menuliskan sebuah kata. Contoh : "Nama" -> String bisa bertambah satu sama lain, bisa dideklarasikan pake petik satu
+    Kalo mau masukin petik dua di dalam string, maka markupnya diganti titik satu di stringnya
+    Kalo mau masukin petik satu di dalam string, maka markupnya diganti titik dua di stringnya
+    Kalo mau ada petik satu dan dua di dalam string --> maka markupnya diganti (` `) -> Backtick
+    String Literal = `${firstName} ${lastName}`
+2. Number = untuk menuliskan sebuah angka. Dapat langsung ditambahkan dan didapatkan hasilnya. 
+    Kalo number ditambah string jadi string. 
+    Kalo dideklarasi ++number maka value dari number akan terupdate dengan hasil ditambah 1
+3. Boolean = sebuah tipe data yang nilainya hanya dua yaitu true atau false.
+    Kalo boolean ditambah string -> hasilnya string
+    Kalo boolean ditambah number -> hasilnya akan mengeluarkan number, sesuai dengan value booleannya (true = 1; false = 0)
+    False dalam JS : tulisan false, nol, string kosong, null (ada isinya tapi kosong), undefined (gada isinya tdk terdefinisi) 
+4. Array = sebuah tipe data seperti list dimana menyimpan list yang sangat beragam dan banyak. 
+    Dalam mengaksesnya disesuaikan dengan index nya. Untuk memanggil array : array[noIndex]
+    Isian dalam Array bisa string, number yang penting dalam bentuk list
+5. Object = sebuah value dimana isinya bisa value yang lainnya. Sebuah object terdiri dari property dan value.
+    Pengaksesan object dalam object panggil propertinya : (user.address.city)
+    Pengaksesan array dalam object : (user.friends[1])
+
+JavaScript Material : https://github.com/nandanugg/DeveloperHandbook/tree/master/getting-started/functions
