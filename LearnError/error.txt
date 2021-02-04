@@ -1,0 +1,16 @@
+[ERROR DETAILS DEFINITION AND HOW TO HANDLE]
+
+1. SyntaxError --> kesalahan penulisan (biasanya kurang tutup buka kurung, salah pendefinisian simbol)
+    cara perbaiki : checking tutup buka kurung, bisa pake extensions Bracket Pair Colorizer
+    Contoh penulisan objek harusnya pake : tapi malah pake = --> name = "Damian 
+
+2. Type Error --> melakukan operasi dengan fungsi value yang salah (kesalahan masukin type)
+    (misal harusnya objek tapi malah string)
+    Cara mencegah : pake TypeScript seperti framework untuk make sure the input data
+    Contoh: setTimeout(null, 100) --> harusnya valuenya bukan null
+
+3. Reference Error --> error yang menjelaskan variabelnya belum di deklarasikan. atau udah dideklarasi tp gada isi
+    Cara mencegah : bisa pake extension ESLint
+    Contoh: const pet = dataInet --> harusnya di define dulu 
+
+TASKS : LEARN ES6 & Study Group videos on Sunday
