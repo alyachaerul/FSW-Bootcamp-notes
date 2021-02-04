@@ -1,0 +1,52 @@
+[JAVASCRIPT : ALGORITHM BASIC]
+
+Variable Types on JavaScript : 
+1. Selain let, ada lagi namanya var untuk mendefinisikan variabel
+    var bisa didefinisikan tanpa ditulis definisi var nya.
+    Kalo buat variabel dengan nama yang sama, bisa bekerja dengan baik dan nilai akan terupdate yang terakhir
+    Tetapi kalo let ga bisa jika buat nama yang sama tapi value berbeda
+2. const : hal yang gak bisa berubah (tetap) dan gabole kosong harus ada value nya
+
+Looping ( Perulangan ) --> memproses setiap data yang diterima : 
+1. Classic Loop : for (let index = 0; index < array.length; index++)
+    for loop memiliki jumlah index awal, startnya dari berapa : let index
+    menjelaskan mengenai kondisional jika index berada dibawah array.length 
+    index++ maka akan terus bertambah jika memenuhi kondisinya
+    length : properti yang berisikan array itemPrice panjangnya berapa
+2. While Loop : akan terus menjalankan codingan sampai kondisi yang dimasukin sudah tidak true lagi
+    Praktek dunia nyata : untuk filterisasi, atau untuk menemukan sebuah data dari sebuah array
+    Kalo di While harus buat var nya sendiri
+3. For In Loop : untuk melakukan perulangan suatu objek
+    Diigunakan jika ada kasus data number maka akan diubah jadi string karena kedepnannya kita butuh string drpd number.
+    typeof values : menampilkan tipe data dari suatu nilai yang didefinisikan
+    For in bisa buat array tapi nampilin indexnya aja
+4. For Of Loop : untuk melakukan perulangan pada sebuah array (nampilin valuenya)
+    Penulisan array menulis secara jamak, iteratornya single
+    Case : ketika FE nerima data dari BE, di looping satu persatu ditampilkan ke web satu persatu
+
+Function Pada JavaScript : 
+- Sebuah function mempunyai nama dan parameter, memiliki sebuah proses, dan memiliki return (hasil dari fungsi)
+- Pada function terdapat parameter, seperti halnya variable hanya saja ini hanya ada dalam function
+- Cara kerja : function di eksekusi, maka node akan mencari fungsi mana yang sesuai, 
+    kemudian parameter di proses di variabel dalam function tsb, dan function akan melakukan pengembalian nilai 
+    yang didapat dari variabel yang memprosesnya.
+- Kalo eksekusi sebuah fungsi yang ada parameter tapi gamasukin parameter bakal ditampilkan undefined
+- Sebuah fungsi bisa tidak ada parameternya
+- Kalo ngga ada returnnya gausah disimpan dalam suatu variabel, langsung print aja
+- Anon Function : berbeda dengan function (fungsi) tapi kalo anon bukan function tapi value seperti string, objek levelnya.
+    kalo variable diisi anonymous function, maka variabel tersebut akan berubah menjadi fucntion --> functionnya gada nama, adanya nama variabel
+    Penulisan : let variableFunction = function () {
+- Arrow Function : mirip seperti anon function, bedanya dari penulisannya lebih singkat dan nanti ada perbedaan saat binding
+    Penulisan : let variableArrowFunction = () => { 
+    Arrow dan Anon Function bisa ditambahin parameter
+- Callback Function : suatu cara untuk mengambil value yang hasilnya perlu menunggu
+- setTimeout() --> fungsi dengan 2 parameter : parameter 1 (arrow function), parameter 2 (timeout (number))
+    Tugasnya mendelay anon atau arrow function selama beberapa milisekon yang kita masukin di parameter kedua
+
+Method pada JavaScript : 
+- Method mirip seperti properti --> fungsi yang berada dalam sebuah object
+- Method punya kemampuan khusus : ${this.name} --> this merepresentasikan object dimana method berada
+- Cara pemanggilan : user.greet() --> namaObjek.namaMethod()
+- Kegunaan Method : untuk memodifikasi objek / value dari variabel tersebut dan untuk menyimpan banyak fungsi 
+
+notes : https://github.com/nandanugg/DeveloperHandbook/tree/master/getting-started/functions
