@@ -1,0 +1,73 @@
+[FUNDAMENTAL OF REST]
+
+- REST : Representational State Transfer --> transfer keadaan yang direpresentasikan
+- Register --> hit API /register (POST) --> INSERT USERS
+- Update Profile --> hit API /profile (PATCH) --> UPDATE USERS
+- Get Profile --> hit API /profile (GET) --> SELECT * FROM USERS
+- Delete Profile --> hit API /profile (DELETE) --> DELETE USERS
+
+- Apps represents the DB State -> API helps both transfer states -> DB represents the App State
+    Bisa bergerak dalam 2 arah
+    API dibangun untuk merepresentasikan dengan method (GET, POST, PATCH, DELETE)
+
+- Postman : sebuah browser yang memunculkan kode 
+- API punya karakteristik hasilnya umumnya bentuknya JSON (returnnya JSON)
+
+- HTTP Methods --> sebuah cara untuk menginisiasi (dimasukkin saat kita melakukan request)
+- Jenis Method : 
+    1. GET --> Mengambil data (mendapatkan data dari server)
+    2. POST --> Mengirimkan data (membuat data baru pada database)
+    3. PUT --> Mengubah seluruhnya dengan menaruh data (mengupdate data yang sudah ada pada database)
+    4. PATCH --> Mengganti data tapi ga seluruhnya (memperbaiki)
+    5. DELETE --> Menghapus data 
+
+- Header : informasi yang disisipkan di sebuah request
+- Body : hal yang memungkinkan client untuk masukin data ke API (bagian dari request yang menyimpan info yang dikirimkan)
+    -> hanya bisa digunakan di method POST, PUT, PATCH, DELETE
+
+- HTTP Status Code : (source: http.cat)
+    1. 2OO+ : request berhasil --> success
+    2. 100+ : digunakan untuk streaming youtube / data --> informational
+    3. 300+ : Request yang kita kirim dialihkan ke URL lain --> redirection
+    4. 400+ : terjadi error yang berasal dari client berkaitan request yang dikirim --> client error
+    5. 500+ : terjadi error berasal dari server --> server error
+
+- Ketika melakukan pengambilan data pada client melalui API untuk bisa dimasukkan ke DB maka : 
+    --> Menggunakan app.use sebuah cara agar kita bisa masukin middleware.
+    --> Middleware merupakan sebuah fungsi untuk memodifikasi bagaimana cara express merespons sebuah request.
+    --> Middlewarenya agar bisa mengakses data terenkripsi --> app.use(express.json());
+    --> Memasukkan data ke db : db.push(req.body); -> Dalam request post, akan mengembalikan data yang sudah ditambahkan
+    --> Gaakan muncul di file karena data kesimpan di RAM
+
+- Rute harus dipisah filenya dan disatuin dalam satu file rutenya
+
+- Melakukan penghapusan data pada array melalui API :
+    Perlu identifiernya untuk melakukan penghapusan pada array
+    Mendefinisikan const kemudian guankan Splice seperti memotong, nanti hasil potongannya terisi di const 
+    Kemudian dari index yang dimasukin, hapus 1 item definisikan parameter db.splice(index, 1)
+
+- Membuat middleware untuk handle error, express nge provide
+- API yang bagus mengembalikan alasan error ke client
+
+
+# How to make a REST API on Express JS : #
+
+1. npm init 
+2. npm install express, install nodemon
+3. .gitignore
+4. Membuat data dummy 
+5. Jalankan servernya pake nodemon
+6. Buka postman, url yang localhost di copy, di paste ke postman dengan method GET
+7. Menggunakan params GET index
+8. Untuk masukin data ke array melalui postman : Body --> Raw --> JSON (tambahin datanya di body postman)
+9. Untuk melakukan edit dengan PUT, di URL pada header Postman harus ditambahin parameter indexnya, isi bodynya yang mau diubah
+10. Menaruh route di folder route
+11. import file route ke index.js
+
+- Cara bikin collection di Postman : 
+    1. New Collections
+    2. Save file, save ke collectionnya
+    3. Rename filenya sesuai request api nya
+
+
+
