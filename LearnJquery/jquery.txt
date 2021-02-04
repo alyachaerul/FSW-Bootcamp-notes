@@ -1,0 +1,19 @@
+[JQUERY FUNDAMENTAL] 
+
+- JQuery adalah sebuah framework dari JS yang membantu dalam memudahkan modifikasi DOM. 
+- How to implement JQuery in project : 
+    Bisa download menggunakan plugin, 
+    Menggunakan slim build (file size lebih kecil) (nice if using framework), 
+    Menggunakan npm atau Yarn --> nice if using FE framework,
+    Menggunakan Bower,
+    Menggunakan Jquery dengan CDN (Content Delivery Network) --> server tersebar di dunia
+    --> CDN sperti sebuah jasa untuk dapat diakses di seluruh dunia dengan mudah
+- Meletakkan nama file javascript yang disambungkan pada file HTML dibawah pendefinisian script jquery
+- Using jquery for DOM : const submitBtnJq = $('.submit-btn'); 
+- out of the box, browser sudah menggunakan Vanilla JS --> common basic JS. 
+- Dokumentasi di API Documentation jquery.com
+- Manfaat : 
+    1. Di dalam JQuery ada namanya selector yang sangat powerful untuk melakukan querySelector
+        --> misal elemen p punya 2 elemen lagi, trs mau select elemen anak 2 dari p (tinggal select aja)
+    2. 
+

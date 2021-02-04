@@ -1,0 +1,13 @@
+TASK : 
+
+Create a web page with contents like a news post using jQuery, and add features like
+- Add comments
+- Delete comment
+- (Extra) edit comment
+
+jQuery in this web will be : 
+    If the button add comment being clicked, it will be show the notification "the comment added succesfully"
+    If the button reset comment being clicked, it will be delete the data in the form
+
+
+

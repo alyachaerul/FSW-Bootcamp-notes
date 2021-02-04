@@ -1,0 +1,62 @@
+@import 'bootstrap.css';
+
+.mainHeading {
+    margin: 15px 5px 50px 5px;
+    font-style: oblique;
+    text-align: left;
+    color: darkred;
+    text-decoration: underline;
+}
+
+.title {
+    margin: 15px 5px 15px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+    font-size: x-small;
+}
+
+#news-img {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    text-align: justify;
+}
+
+label {
+    margin: 15px 5px 10px 5px;
+    font-weight: bold;
+    text-align: start;
+}
+
+#inComment {
+    margin: 15px 5px 10px 5px;
+    display: block;
+    width: 50%;
+    border-radius: 5px;
+    line-height: 1.4em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    margin: 15px 5px 15px 5px;
+
+}
+
+.delete-btn {
+    margin: 15px 5px 15px 5px;
+}
+
+.edit-btn {
+    margin: 15px 5px 15px 5px;
+}

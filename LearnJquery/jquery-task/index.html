@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="news-style.css" />
+    <title>News Update Blog</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Heading Section -->
+      <h1 class="mainHeading">CNN News Update</h1>
+
+      <!-- Content Section -->
+      <h3 class="title">
+        What 'vaccine passports' mean for your summer vacation
+      </h3>
+      <p class="author">Barry Neild, CNN • Updated 23rd January 2021 </br> 
+    Source : CNN Travel </p>
+    <img src="cnn.jpg" id="news-img" >
+    <p class="text mt-5">
+        (CNN) — The words "vaccine passport" have a reassuring ring to them, perhaps conjuring up the image of a sleek, embossed document with watermarked pages and official stamps of approval. Flourished at border controls, 
+        it would open travel doors that, for so many of us, have been closed by Covid-19.
+    </p>
+
+    <p class="text">
+        Some destinations -- including the Seychelles, Cyprus and Romania -- 
+        have already lifted quarantine requirements to visitors able to prove they're vaccinated. 
+        Others, such as Iceland and Hungary, have opened up to people who've recovered from Covid-19.
+    </p>
+
+    <p class="text">
+        This raises the prospect that proof of inoculation or immunity could be 
+        the golden ticket to rebooting travel and seems good news for people 
+        eager to book summer vacations after months of lockdown, 
+        particularly as vaccine rollouts gather pace.
+    </p>
+
+    <!-- Comment Section -->
+    <div class="row">
+        <div class="content col-6"> 
+            <label for="comment"> Enter your Comment Here! </label>
+            <textarea name="comment" rows="10" tabindex="4" id="inComment"></textarea>
+            <button type="submit" class="submit-btn btn-primary">Add Comment</button>
+            <button class="edit-btn btn-success">Edit Comment</button>
+            <button class="delete-btn btn-danger">Delete</button>
+        </div>
+
+        <div class="related col">
+            <div class="comments">
+                <h4 class="mt-4"> Comments Display : </h4>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script Needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
