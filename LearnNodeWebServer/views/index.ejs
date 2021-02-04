@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to my API</title>
+  </head>
+  <body>
+    <!-- EJS esc : untuk hal2 bersifat logical, kayak import suatu file-->
+    <%- include('header') %>
+    <h1>This is my Home Page</h1>
+    <!--ejsout-->
+    <h3>You have accessed this page for about <%= counter %> times</h3>
+    <a href="about">Go to About Page</a>
+    <% if (isMorning) { %>
+    <p>Good Morning</p>
+    <% } else { %>
+    <p>Good Night</p>
+    <% } %>
+
+    <!-- ejs each untuk looping -->
+    <% names.forEach(name => { %>
+    <p><%= name %></p>
+    <% }) %>
+
+    <script src="script.js"></script>
+  </body>
+</html>

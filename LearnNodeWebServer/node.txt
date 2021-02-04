@@ -1,0 +1,51 @@
+[NODE JS FUNDAMENTAL]
+
+- Node JS merupakan JS runtime yang multifungsi --> bikin apps bisa, apps desktop, bikin API 
+    (multifungsi dapat ngebuat web server dengan library)
+- Web Server : server yang isinya terdapat data atau hal yang bersifat centralized (terpusat)
+    --> harus berada pada internet
+- NPM : Node Package Manager 
+    -g : melakukan install dengan global --> install di folder root / user administrator laptop bisa akses live server dimanapun folder kita berada
+
+- Menggunakan Node untuk Membuat Web Server : 
+ 1. Menjalankan perintah npm init --> membuat folder kita menjadi sebuah npm module yang dibutuhkan kalo mau bikin webserver
+    -> diisi setiap fieldnya, nanti akan otomatis terbuat file package.json --> file ini bisa melacak kita install package apa aja
+ 2. Menginstall library express 
+    --> sebuah library / framework digunakan untuk membuat web server (akan dipersingkat dengan express js)
+    --> npm install express --> kalo ga global, package yang akan kita gunakan gakan ter list di dependencies
+    --> package-lock.json : info express butuh library apa aja
+ 3. Tambahin file .gitignore -> untuk mencegah beberapa file tercommit -> tulis nama file yang tidak akan di commit apa saja 
+    contoh : node_modules, package-lock --> nanti akan berubah warna hitam file / folder yang tidak akan di commit
+ 4. Pada file index.js definisikan const express = require('express') --> global function untuk mengambil referensi dari lib express
+    - Require --> sebuah global function untuk mengambil referensi ke package yang di install
+ 5. Tambahkan isi object scripts dengan nama start dengan value node index.js --> untuk mempersingkat menjalankan file index.js (main file) dengan npm start saja
+
+Gimana ketika melakukan clone project pengen dapetin node_modules dan package-lock.json jika ada yang butuh?
+--> npm install tanpa package --> akan menginstall seluruh package & library yang ada
+--> kalo ngeclone project node js, harus jalanin npm install pertama kali
+
+- JSON : Java Script Object Notation --> objek dimana nama propertinya pake petik
+- index.js --> starting file yang akan dieksekusi pertama oleh project ini --> menyesuaikan main file yang ada pada package JSON
+- Localhost : network komputer kita (sebuah domain yang ada di komputer lokal kita, yang bisa akses masing-masing komputer)
+
+- express.static : merupakan suatu method pada express untuk memungkinkan sebuah isi 
+    dari suatu file di folder bisa diakses di rute menggunakan method sendFile
+  -> Kalo buat script baru tinggal require aja, express.static otomatis akan 
+    melakukan referensi file yang ada dalam folder yang didefinisikan tsb
+
+- Cara otomatis node nya auto reload --> install package nodemon --> install secara global
+    npm install -g nodemon 
+- Jalankan script dev : npm run dev (selain start harus pake run)
+
+
+[EMBEDDED JAVA SCRIPT]
+EJS --> suatu templating engine : ngambil data dari database tampilin di FE
+    - Templating engine memungkinkan menyisipkan data dari BE ke FE
+    - Bisa masukin variabel dari BE ke FE dengan cara : <%= namaPropertiData %>
+    - Didalam EJS bisa melakukan permisalan
+    - ejsif : masukin condition seperti di JS
+    - ejselfi : masukin else if
+
+
+
+
