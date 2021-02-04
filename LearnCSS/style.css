@@ -1,0 +1,69 @@
+/* Mendefinisikan karakter yang digunakan */
+@charset 'UTF-8';
+/* Mencacah file CSS dengan mengambil beberapa atribut dari file lain */
+@import 'base.css';
+@import 'bootstrap.css';
+
+/* mengubah font sesuai style tertentu yang telah ditetapkan */
+@font-face {
+    font-family: "myFont";
+    src: url(YuseiMagic-Regular.ttf);
+}
+
+/* mendefinisikan selector HTML untuk diberikan atribut CSS 
+dengan ketentuan penulisan selector ditambahkan kurung kurawal {} 
+dengan pendefinisian atribut didalamnya*/
+
+h1 {
+    border: 15px solid black;
+    padding: 15px 5px 15px 5px;
+    font-family: myFont;
+    color: grey;
+}
+
+.blog-title {
+    font-family: myFont;
+}
+
+.t1 {
+    font-size: 14pt;
+    color: blue;
+}
+
+.t2 {
+    font-size: 14pt;
+    color: grey;
+}
+
+.t1::first-letter {
+    font-size: 30pt;
+}
+
+.header {
+    background-color: azure;
+}
+
+.content {
+    background-color: beige;
+}
+
+.related {
+    background-color: burlywood;
+}
+
+.footer {
+    background-color: bisque;
+}
+
+input[type="text"] {
+    padding: 8px;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background-color: black;
+}
+
+input[type="submit"] {
+    padding: 8px;
+}

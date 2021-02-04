@@ -1,0 +1,62 @@
+[BOOTCAMP NOTE : CSS (CASCADING STYLE SHEET)]
+
+CSS : memperbagus tampilan (terkait estetika tampilan)
+
+- Awal browser jalan baca bagian DOCTYPE dulu
+- Selanjutnya baca HTML, bahasanya apa
+- Kemudian akan baca bagian head per baris saru per Selanjutnya
+- Selanjutnya akan baca link rel stylesheet css untuk dapat membaca estetika
+yang dimasukkan pada file css (css sebagai baju dari htmlnya)
+- Browser ketika baca file html maka browser akan menginterpretasi menjadi DOM tree
+(DOM tree (seperti pohon): baca tag apa saja, kontennya apa saja satu per satu)
+- Browser Load HTML --> Parse HTML --> Load CSS --> Parse CSS --> Create DOM tree -> Display
+
+Cara dalam menulis CSS :
+- External Style Sheet (most recommended) --> file HTML & CSS terpisah
+- Internal Style Sheet (in one file both HTML & CSS) 
+- Inline Style --> mendefinisikan css pada atribut style pada suatu elemen tag di HTML
+
+Struktur Penulisan CSS : 
+1. Ada indentasi dari selector ke atribut (selector dan atribut) (atribut dan value)
+2. h1, p : selector. Kontennya dalam {} : atribut --> dalam nulis atribut pake :
+2. Jika atribut lebih dari satu, harus ditulis semicolon (;) diakhir atribut
+3. Nulis comment : cmd + / 
+
+Browser caniuse.com -> melakukan checking pada atribut elemen CSS dapat stabil di browser apa saja
+--> Dalam penulisan atribut CSS, sesuaikan dengan target pengguna web
+
+The at-rule (cara untuk memberi info kalo CSS seperti apa syntaxnya) :
+- import : mencacah file CSS untuk mengambil beberapa atribut dari file lain untuk diimplementasikan
+- charset : untuk memberi info file css tersebut harus di akses karakter seperti apa --> di paling atas
+- XHTML : safer version of HTML biasanya digunakan untuk financial company (namun slower than HTML usual)
+
+At-rule nested rules : 
+- Font-face : mengubah font sesuai dengan keinginan style di web (misal font bikin sendiri)
+- @media : untuk membuat web yang responsif / @media print : untuk mengubah format html ke file print
+
+More CSS resources : css-tricks.com/the-at-rules-of-css
+
+Perbedaan Margin dan Padding : 
+Margin : jarak dari luar suatu elemen
+Padding : jarak dalam suatu elemen
+
+Sebidang elemen tersebut bisa meluas bergantung kontennya --> Padding
+Jarak antar elemen --> Margin
+--> Margin dan Padding berkolaborasi dalam satu kesatuan
+--> Penulisan Padding : 15px 5px 15px 5px (top right bottom left) -> searah jarum jam
+--> kalo penulisan Padding : 5px (samarata seluruh padding)
+--> ngewarnain Padding -> border : 15px solid black
+
+- Tag div dalam HTML : tag ngebantu untuk membagi HTML lebih rapi
+- Atribut class : untuk mereferensikan ataupun tidak mereferensikan css
+- JavaScript hanya bisa mereferensikan 1 id dalam 1 elemen
+- input : berupa textbox 
+- pseudoclass : untuk animasi 
+- hover : melayang diatas -> animasi ketika kursor diarahkan ke button (misal beda warna dari background)
+- pseudo element : modifikasi paragraph
+
+Menggunakan Framework Bootstrap : 
+- Kegunaan : mempermudah dalam merapihkan untuk estetika tampilan website
+- Framework -> sebuah codingan yang udah dibuat, kita tinggal pakai
+- Class Container : ngebuat lebih rapih dan adaptif terhadap ukuran dan orientasi layar (responsif)
+
