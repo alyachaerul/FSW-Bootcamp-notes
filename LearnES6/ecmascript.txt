@@ -1,0 +1,116 @@
+[ECMA SCRIPT HISTORY]
+
+- ECMA SCRIPT --> standarisasi JavaScript yang dibuat oleh ECMA International Organization
+- ES6 merupakan sebuah versi JS dimana setiap bahasa pemrograman akan berkembang, 
+    dengan mengikuti perkembangan, penyelesaian masalah lebih mudah, cepat dan efisien.
+    ES1, ES2, ES3, ES5, ES5.1, ES6,ES7, ES8, ES9, ES10, ES11. 
+    Updateannya terprediksi dapat dilihat dari proposalnya.
+- Fitur pada ES6 : let & const, Arrow Function, Default Parameter Values, 
+    method find & findIndex pada Array, minimum 
+
+
+----------------------------- BEBERAPA PERINTAH PADA ES6 -----------------------------
+
+Let & Const → mendefinisikan / menetapkan sebuah variabel dan valuenya
+let a = 10; const b = 20;
+
+Arrow Function
+let arrowFunction = () => {
+     return “This is an arrow function”;
+}
+console.log(‘Arrow Function : ‘, arrowFunction());
+
+Default Parameter Values → menuliskan value dari variabel yang didefinisikan default 
+function getName(firstName, lastName, prefix = ‘Mr.’) {
+       Return `${prefix} ${firstName} ${lastName}`
+}
+console.log(getName(“Alya”, “Chaerul”)); → akan default prefix Mr.
+console.log(getName(“Alya”, “Chaerul”, “Ms.”)); → prefix menjadi Ms. 
+ 
+Array method .find() → mengembalikan nilai elemen pertama yang benar / sesuai dari sebuah array
+let arr = [4, 6, 8, 9, 12]
+function isOdd(i) {
+     return i % 2 !== 0;
+}
+arr.find(isOdd); → Mencari nilai mana yang termasuk bilangan ganjil, hasilnya : 9 
+    karena hanya 9 yang masih terdapat sisa pembagian.
+
+Array method .findIndex() → mengembalikan index pertama dalam array yang memenuhi ketentuan 
+let arr = [4, 6, 8, 9, 12]
+function isOdd(i) {
+     return i % 2 !== 0;
+}
+arr.findIndex(isOdd); → Hasilnya merupakan (4) 
+    karena mencari nilai yang termasuk bilangan ganjil berada pada index berada. 
+    Pada method .find() telah ditemukan nilai yang termasuk bilangan ganjil adalah (9) dan 
+    dengan method .findIndex() menemukan berada pada index berada bilangan ganjil tersebut.
+
+Minimum & Maximum Number → method untuk mendapatkan nilai minimum dan maximum dari Number. 
+var minInteger = Number.MIN_SAFE_INTEGER → untuk mendapatkan nilai minimum dari suatu number
+var maxInteger = Number.MAX_SAFE_INTEGER → untuk mendapatkan nilai maksimum dari suatu number
+Dapat diubah nilai dari min atau max nya dengan menentukan ulang dari sebuah nilai yang diinginkan
+
+Method isInteger → untuk memastikan kalau inputan adalah suatu number (harus bilangan bulat) 
+Number.isInteger(5); → menampilkan hasil true
+Number.isInteger(“Alya”); → menampilkan hasil false karena yang dimasukkan string bukan sebuah integer 
+
+Jika datanya masih berupa string, dapat dilakukan konversi ke integer dengan Number(namaVar) : 
+
+let stringNumber = “5”; 
+stringNumber = Number(stringNumber);
+console.log(typeof stringNumber); → dilakukan console log dengan pengecekan tipe data 
+    menggunakan typeof untuk mengetahui tipe datanya
+
+Method isNaN → memeriksa apakah suatu value dari sebuah variabel bukan sebuah angka (Not a Number) atau merupakan sebuah angka. 
+let stringNo = “5”; 
+If (isNaN(stringNo)) {
+    console.log(‘Masukkan karakter aritmatik’);
+};
+
+Method isFinit → memeriksa apakah fungsi artimatik yang di input hasilnya merupakan infinity atau bukan 
+
+let infinity = 10/0
+console.log(infinity); 
+If (isFinite(infinity)) {
+    console.log(‘Aritmetiknya normal’);
+} else {
+    console.log(‘To Infinity and Beyond’);
+} 
+
+Promised → cara solve ketika tidak bisa return data karena delay, namun bisa ada opsi untuk menolak, tidak harus selalu dilakukan seperti aturan, namun harus ada alasan mengapa menolak.
+
+Function getDataPromise(url) { 
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+              If (url) {
+                  resolve(url)
+              } else {
+                  reject(“Error, not allowed”); → alasan menolak
+              }
+         }, 1000);
+    })
+}
+
+getDataPromise(‘trello.com’)
+      .then(result => { → kondisi ketika resolve, dapat mengakses
+          console.log(result);
+      })
+      .catch(err => { → melakukan handle penolakan promised
+          console.log(err);
+      })
+----------------------------------------------------------------------------------------
+
+[APPLICATION PROGRAMMING INTERFACE (API)]
+
+- Cara Kerjanya : Suatu fungsi / method pada suatu web bisa digunakan di platform lain
+    Developer bisa share codingannya untuk di reuse dan di improve oleh developer lain
+
+Jenis API --> 
+    1. Pakai Codingan --> library
+    2. Pakai Rute 
+
+API FETCH : ngemudahin untuk mengontak API. --> perlu sebuah input
+    fetch(url)
+    
+
+
