@@ -1,0 +1,21 @@
+[BASIC DATABASE]
+
+- Database --> sebuah mesin yang digunakan untuk membantu penyimpanan data, menyediakan halaman web, mengotomatisasi tugas
+- Database Client --> aplikasi yang didesain untuk connect dengan database
+- Database App --> aplikasi untuk buat Database
+
+------------------------- POSTGRESQL ------------------------
+
+- PostgreSQL berjalan di Port 5432
+- Perintah untuk masuk ke PostgreSQL : psql 
+- Perintah melihat list database pada postgresql : \l
+- Membuat database baru : CREATE DATABASE nama_db;
+- Pindah database : \c nama_db
+- Ngehapus database : DROP DATABASE nama_db
+
+
+------------------------- Database Schema ------------------------
+
+- Database Schema == ERD (Entity Relationship Diagram)
+    DB Schema harus dibangun se flexible mungkin supaya bisa adaptif dengan perubahan
+
