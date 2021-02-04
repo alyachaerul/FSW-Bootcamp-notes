@@ -1,0 +1,4 @@
+[DOM : D Object Model]
+
+- click-listener : bisa digunakan untuk mendengar seluruh elemen
+- document : sebuah objek 

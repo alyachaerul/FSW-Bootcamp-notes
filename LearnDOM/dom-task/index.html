@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="data-style.css" />
+    <title>Student's Data Web</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading text-center" id="mainHeading">
+        Student's Identity Data Page
+      </h1>
+      <p class="paragraph font-bold text-center" id="mainParagraph">
+        This page aims to describe the student's detail data information
+      </p>
+      <div style="overflow-x: auto">
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Year Class</th>
+            <th>Faculty</th>
+            <th>Major</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Mahendra</td>
+            <td>2016</td>
+            <td>Computer Science</td>
+            <td>Informatics</td>
+            <td>
+              <button class="edit btn-primary">Edit</button>
+              <button class="remove btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Annisa</td>
+            <td>2017</td>
+            <td>Administration</td>
+            <td>Business Administration</td>
+            <td>
+              <button class="edit btn-primary">Edit</button>
+              <button class="remove btn-danger">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Reza</td>
+            <td>2015</td>
+            <td>Economics and Business</td>
+            <td>Management</td>
+            <td>
+              <button class="edit btn-primary">Edit</button>
+              <button class="remove btn-danger">Remove</button>
+            </td>
+          </tr>
+        </table>
+
+        <div class="container">
+          <button type="button" class="add text-center font-bold">
+            Add Student Data
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
