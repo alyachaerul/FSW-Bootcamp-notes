@@ -1,0 +1,8 @@
+[How to Integrate POSTGRESQL with NodeJS]
+
+1. Install node postgres : npm install pg 
+2. Membuat folder connection berisi file dimana melakukan koneksi dengan API 
+3. Cara Ambil data : CREATE > INSERT SCRIPT
+4. Cara ambil data melalui API : old way, new way (aysnc await)
+5. nanoid -> libary yang digunakan untuk generate id
+

@@ -1,0 +1,18 @@
+{
+  "name": "learnnodewithpostgres",
+  "version": "1.0.0",
+  "description": "learn node with postgresql",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nanoid": "^3.1.20",
+    "pg": "^8.5.1"
+  }
+}
