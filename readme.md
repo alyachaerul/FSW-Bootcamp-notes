@@ -1,1 +1,1 @@
-# Fullstack Web Developer Bootcamp by Binar Academy Notes
+# Fullstack Web Developer Notes Bootcamp by Binar Academy 
