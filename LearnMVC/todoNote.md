@@ -1,16 +1,16 @@
 # What to Do on MVC Concept in Express JS
 
-1. 1. git init
+1. git init
 2. npm init -y
 3. npm install express dotenv ejs pg sequelize
 4. Buat .env
 5. Buat .gitignore dengan isi:
-   1. node_modules
-   2. package-lock.json
-   3. .env
+   - node_modules
+   - package-lock.json
+   - .env
 6. sequelize init
 7. config.json -> config.js
-   1. Gunakan dotenv untuk pakai environment variable
+   - Gunakan dotenv untuk pakai environment variable
 8. sequelize db:create
 9. sequelize model:create --name Articles --attributes content:text
 10. sequelzie db:migrate
